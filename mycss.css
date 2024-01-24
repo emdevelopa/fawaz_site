@@ -1,0 +1,32 @@
+img {
+  width: 10em;
+  height: 10em;
+  border-radius: 5em;
+}
+
+.shoe-card {
+  border: 1px solid black;
+  border-radius: 2em;
+  padding: 2em;
+}
+
+section {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 426px) {
+  section {
+    flex-direction: column;
+  }
+
+  .shoe-card {
+    height: 20em;
+  }
+}
+
+article{
+    font-size: 90px;
+    color: aqua;
+}

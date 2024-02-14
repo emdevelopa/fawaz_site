@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: aqua;
+        }
+
+        .box {
+            width: 3em;
+            height: 3em;
+            background: red;
+            animation: movingBox 4s ease infinite;
+        }
+
+          @keyframes movingBox {
+            0% {
+                transform: translateX(-100%); /* Move to the left of the parent */
+            }
+
+            100% {
+                transform: translateX(100%); /* Move to the right of the parent */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

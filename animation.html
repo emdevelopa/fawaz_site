@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .loading {
+            display: flex;
+            gap: 10px;
+            height: 100vh;
+            background-color: rgba(46, 46, 46, 0.436);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dot {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background: #adadad;
+        }
+
+        .one {
+            animation: animeone 4s ease-in infinite;
+        }
+
+        .two {
+            animation: animetwo 4s ease-in infinite;
+        }
+
+        .three {
+            animation: animethree 4s ease-in infinite;
+        }
+
+        .four {
+            animation: animefour 4s ease-in infinite;
+        }
+
+        @keyframes animeone {
+            0% {
+                background-color: rgb(174, 174, 174);
+            }
+
+            25% {
+                background-color: rgb(0, 0, 0);
+
+            }
+        }
+
+        @keyframes animetwo {
+            25% {
+                background-color: rgb(156, 156, 156);
+            }
+
+            50% {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+
+        @keyframes animethree {
+            50% {
+                background-color: rgb(185, 185, 185);
+            }
+
+            75% {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+
+        @keyframes animefour {
+            75% {
+                background-color: rgb(132, 132, 132);
+            }
+
+            100% {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="dot one"></div>
+        <div class="dot two"></div>
+        <div class="dot three"></div>
+        <div class="dot four"></div>
+    </div>
+</body>
+
+</html>

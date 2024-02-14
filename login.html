@@ -15,7 +15,33 @@
 
         }
 
-        .parent-container {
+        h1 {
+            color: rgb(0, 255, 174);
+            text-align: center;
+        }
+
+        .input-container {
+            padding-top: 1em;
+            background-color: rgba(186, 224, 224, 0.32);
+            padding: 8px;
+            margin-bottom: 1em;
+            display: flex;
+            gap: 5px;
+        
+        }
+
+
+
+        input {
+
+            border: none;
+            outline: none;
+            background-color: transparent;
+            
+            
+        }
+
+        section {
             background-color: white;
             width: 50%;
             display: flex;
@@ -24,80 +50,65 @@
             margin-top: 10%;
             border-radius: 8px;
             padding: 3em;
+           
         }
 
-        h1 {
-            color: rgb(0, 255, 174);
-            text-align: center;
-        }
-
-        .brand-icons {
-            display: flex;
-            gap: 1em;
-        }
-
-        .input-container {
-            margin-bottom: 1em;
-            background-color:rgba(0, 255, 174, 0.062) ;
-            padding: 0.6em;
-            display: flex;
-            gap: 8px;
-        }
-        input{
+        button {
             border: none;
-            outline: none;
-            background-color: transparent;
+            background-color: aquamarine;
+            border-radius: 10px;
+            padding: 5px 20px
+            
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            padding-top: 1px;
             
         }
         p{
-            font-size: 12px;
-            color: rgb(178, 173, 173);
+            font-size: small;
+            color: rgb(166, 178, 174);
         }
-        form{
-            text-align: center;
+        .brand-icons{
+            display: flex;
+            gap: 10px;
         }
-        button{
-            background-color: rgb(0, 255, 174);
-            border: none;
-            border-radius: 5em;
-            padding: 0.5em 2.5em;
-            color: white;
-            font-weight: bold;
-        }
-        
     </style>
 </head>
 
 <body>
 
-    <div class="parent-container">
-        <h1>Create Account</h1>
+    <section>
+
+        <h1>sign in to diprella</h1>
+
         <!-- icons -->
         <div class="brand-icons">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-google"></i>
             <i class="fa-brands fa-linkedin "></i>
         </div>
-        <p>or use your email for registration</p>
+        <p>or use your email account</p>
         <form>
-            <div class="input-container">
-                <i class="fa fa-user"></i>
 
-                <input type="text" placeholder="Name"/>
-            </div>
             <div class="input-container">
                 <i class="fa fa-envelope"></i>
-
                 <input type="email" placeholder="Email" />
+
             </div>
             <div class="input-container">
                 <i class="fa fa-lock"></i>
-
-                <input type="password" placeholder="Password"/>
+                <input type="password" placeholder="password" />
             </div>
-            <button type="submit">sign up</button>
+            <div class="button">
+                <button type="submit">sign up</button>
+            </div>
         </form>
-    </div>
+    </section>
+
+
 </body>
 
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        loading
+    </title>
+    <style>
+        body {
+            background-color: rgb(206, 218, 214);
+        }
+
+        .dot {
+            height: 1em;
+            width: 1em;
+            background-color: black;
+            border-radius: 50%;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+        section {
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .one {
+            animation-name: amineone;
+        }
+
+        .two {
+            animation-name: aminetwo;
+
+        }
+
+        .three {
+            animation-name: aminethree;
+
+        }
+
+        .four {
+            animation-name: aminefour;
+
+        }
+
+
+        @keyframes amineone {
+            0% {
+                background-color: red;
+
+            }
+
+            25% {
+                background-color: blue;
+
+            }
+        }
+
+        @keyframes aminetwo {
+            25% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: blue;
+            }
+        }
+
+        @keyframes aminethree {
+            50% {
+                background-color: red;
+            }
+
+            75% {
+                background-color: blue;
+            }
+        }
+
+        @keyframes aminefour {
+            75% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="dot one"></div>
+        <div class="dot two"></div>
+        <div class="dot three"></div>
+        <div class="dot four"></div>
+    </section>
+
+    <table border="2px">
+        <caption>Most used cars of all time</caption>
+     
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Car Name</th>
+                <th>Car Color</th>
+                <th>Car Date</th>
+                <th>Price(#)</th>
+            </tr>
+        
+        </thead>
+        <tbody>
+            <!-- first row -->
+            <tr>
+                <td>1</td>
+                <td>Toyota</td>
+                <td>2016</td>
+                <td>red</td>
+                <td>20</td>
+            </tr>
+            <!-- second row -->
+            <tr>
+                <td>2</td>
+                <td>BENZ</td>
+                <td>2020</td>
+                <td>orange</td>
+                <td>10</td>
+            </tr>
+            <!-- third row -->
+            <tr>
+                <td>3</td>
+                <td>VENZA</td>
+                <td>2014</td>
+                <td>pink</td>
+                <td>80</td>
+            </tr>
+            <!-- fourth row -->
+            <tr>
+                <td>4</td>
+                <td>LEXUS</td>
+                <td>2019</td>
+                <td>red</td>
+                <td>30</td>
+            </tr>
+            <!-- fifth row -->
+            <tr>
+                <td>5</td>
+                <td>NISSAN</td>
+                <td>2020</td>
+                <td>green</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">total</td>
+                <td>155</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

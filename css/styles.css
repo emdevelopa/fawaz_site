@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.firstbox {
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+.text1 {
+  color: white;
+}

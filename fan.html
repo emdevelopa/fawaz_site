@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fan-parent {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fan-head {
+            background-color: aqua;
+            height: 10em;
+            width: 10em;
+            border-radius: 50%;
+            text-align: center;
+            animation: rotating 1ms infinite linear;
+        }
+
+        .fan-leg {
+            background-color: aqua;
+            height: 12em;
+            width: 2em;
+            position: relative;
+        }
+
+        .switch {
+            width: 1.5em;
+            height: 2em;
+            background: purple;
+            border-radius: 8em;
+            position: absolute;
+            top: 20%;
+            left: 15%;
+        }
+
+        .switch:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fan-parent">
+        <div class="fan-head">fan</div>
+        <div class="fan-leg">
+            <div class="switch"></div>
+        </div>
+    </div>
+</body>
+
+</html>
